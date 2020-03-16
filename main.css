@@ -1,0 +1,135 @@
+@media (hover: hover) and (pointer: fine) {
+    #open-close:hover {
+        color: #fff;
+    }
+
+    .button:hover {
+        border-left: #fff solid 7px;
+        color: #fff;
+    }
+}
+
+@keyframes call {
+    from {
+        background-color: #fff;
+        color: #ef5621;
+    }
+    to {
+        background-color: red;
+        color: white;
+    }
+}
+
+body {
+    background-color: #111;
+    font-family: 'Titillium Web', SansSerif, sans-serif;
+}
+
+hr {
+    border-color: #777;
+}
+
+.button {
+    background-color: #222;
+    width: 100%;
+    height: 16vh;
+    border-left: #eee solid 2px;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    font-size: 2.7rem;
+    user-select: none;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
+    -webkit-clip-path: polygon(95% 100%, 100% 70%, 100% 0%, 0 0, 0 100%);
+    clip-path: polygon(95% 100%, 100% 70%, 100% 0%, 0 0, 0 100%);
+}
+
+.button:before {
+    position: absolute;
+    top: 0; right: 0;
+
+}
+
+.button:hover, .button:focus, .button.active {
+    border-left: #fff solid 7px;
+    color: #fff;
+}
+
+#open-close {
+    background-color: #222;
+    height: 12vh;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 2.7rem;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.help {
+    background-color: #222;
+    color: #c75224;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 2.7rem;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+.help:hover {
+    background-color: #ef5621;
+    color: #fff;
+}
+
+.help > div {
+    margin: auto;
+}
+
+.help.active {
+    animation: bubble 1.0s linear 0.5s normal forwards;
+    animation-name: call;
+    animation-iteration-count: infinite;
+}
+
+#open-close:hover, #open-close:focus {
+    color: #fff;
+}
+
+#close {
+    display: none;
+}
+
+.oc-button {
+    margin: auto;
+}
+
+#description {
+    height: 15vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#title {
+    color: #ccc;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+#floor {
+    font-size: 2.5rem;
+    margin: 0;
+}
